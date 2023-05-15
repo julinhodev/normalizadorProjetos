@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./assets/styles/style.css"/>
+    <title>Normalizador de Projetos</title>
+</head>
+<body>
+    
+    <header>
+        <section class="container">
+            <h1>Normalizador de Projetos</h1>
+            <div>
+                <img src="./assets/images/svg/patch-check.svg" alt="Usuário Logado">
+            </div>
+        </section>        
+    </header>
+
+    <nav>
+        <section class="container">
+            <div class="hover active" id="btn-inicio" name="inicio">
+                <img src="./assets/images/svg/file-earmark.svg" alt="Usuário Logado">
+                <span>INÍCIO</span>
+            </div>
+            <div class="hover active" id="btn-documentos" name="documentos">
+                <img src="./assets/images/svg/file-earmark2.svg" alt="Documentos">
+                <span>DOCUMENTOS</span>
+            </div>
+            <div class="hover active" id="btn-referenciador" name="referenciador">
+                <img src="./assets/images/svg/file-earmark-font.svg" alt="Referenciador">
+                <span>REFERENCIADOR</span>
+            </div>
+            <div class="hover active" id="btn-comoUsar" name="comoUsar">
+                <img src="./assets/images/svg/file-earmark-plus.svg" alt="Como usar">
+                <span>COMO USAR</span>
+            </div>
+            <div class="hover active" id="btn-sobre" name="sobre">
+                <img src="./assets/images/svg/file-earmark-play.svg" alt="Sobre">
+                <span>SOBRE</span>
+            </div>
+            <div class="container-pesquisa">
+                <input type="text" id="search" name="search" class="search" placeholder="PESQUISAR">
+                <img class="hover active" src="./assets/images/svg/search.svg" alt="Pesquisar" id="btn-search">
+            </div>
+        </section>
+    </nav>
+    
+    <section id="inicio" class="container">
+        <div id="container-inicio">
+           <div id="container-foto-inicio">
+                <p class="texto-foto">Bem-vindo ao Normalizador de Projetos</p>
+           </div>
+
+            <div class="container-tamplate">
+                <div class="container-tamplate-download">
+                    <div class="container-intertno-template-download">
+                        <img src="./assets/images/svg/logo-senac.svg" alt="logo-senac">
+
+                        <div class="container-desc-tamplate-download">
+                            <h3>Trabalho de conclusão de Curso</h3>
+                            <p>Data atualizada: 02/2023</p>
+                        </div>
+
+                        <img class="hover active" src="./assets/images/svg/download.svg" alt="download" id="btn-download-conclusao-curso">
+                    </div>
+                </div>
+
+                <div class="container-tamplate-download">
+                    <div class="container-intertno-template-download">
+                        <img src="./assets/images/svg/logo-senac.svg" alt="logo-senac">
+
+                        <div>
+                            <h3>Projeto Integrador</h3>
+                            <p>Data atualizada: 12/2022</p>
+                        </div>
+
+                        <img class="hover active" src="./assets/images/svg/download.svg" alt="download">
+                    </div>
+                </div>
+
+                <div class="container-tamplate-download">
+                    <div class="container-intertno-template-download">
+                        <img src="./assets/images/svg/logo-senac.svg" alt="logo-senac">
+
+                        <div>
+                            <h3>Guia de normalização 3ª edição</h3>
+                            <p>Data atualizada: 12/2014</p>
+                        </div>
+
+                        <img class="hover active" src="./assets/images/svg/download.svg" alt="download">
+                    </div>
+                </div>
+                
+                <span>
+                    <img class="hover active" src="./assets/images/svg/plus-square-dotted.svg" alt="add" id="btn-add-tamplate">
+                </span>                
+            </div>
+        </div>        
+    </section>
+
+    <section id="documentos" class="container" style="display: none;">
+       <div id="container-documentos">
+
+            <div id="container-documentos-title">
+                <img src="./assets/images/svg/file-earmark2.svg" alt="Documentos">
+                <span>DOCUMENTOS</span>
+            </div>
+
+            <div id="container-documentos-search">
+                <div class="container-pesquisa">
+                    <input type="text" name="search" class="search" placeholder="PESQUISAR">
+                    <img class="hover active" src="./assets/images/svg/search.svg" alt="Pesquisar" id="btn-search">
+                </div>
+                <span>4 resultados na pesquisa Senac</span>
+            </div>
+
+            <div class="container-documentos-tamplate">
+                <div id="container-documentos-tamplate-resultado">
+                    
+                    <div class="container-tamplate-download">
+                        <div class="container-intertno-template-download">
+                            <img src="./assets/images/svg/logo-senac.svg" alt="logo-senac">
+    
+                            <div class="container-desc-tamplate-download">
+                                <h3>Trabalho de conclusão de Curso</h3>
+                                <p>Data atualizada: 02/2023</p>
+                            </div>
+    
+                            <img class="hover active" src="./assets/images/svg/download.svg" alt="download" id="btn-download-conclusao-curso">
+                        </div>
+                    </div>
+    
+                    <div class="container-tamplate-download">
+                        <div class="container-intertno-template-download">
+                            <img src="./assets/images/svg/logo-senac.svg" alt="logo-senac">
+    
+                            <div>
+                                <h3>Projeto Integrador</h3>
+                                <p>Data atualizada: 12/2022</p>
+                            </div>
+    
+                            <img class="hover active" src="./assets/images/svg/download.svg" alt="download">
+                        </div>
+                    </div>
+    
+                    <div class="container-tamplate-download">
+                        <div class="container-intertno-template-download">
+                            <img src="./assets/images/svg/logo-senac.svg" alt="logo-senac">
+    
+                            <div>
+                                <h3>Guia de normalização 3ª edição</h3>
+                                <p>Data atualizada: 12/2014</p>
+                            </div>
+    
+                            <img class="hover active" src="./assets/images/svg/download.svg" alt="download">
+                        </div>
+                    </div>
+
+                    <div class="container-tamplate-download">
+                        <div class="container-intertno-template-download">
+                            <img src="./assets/images/svg/logo-senac.svg" alt="logo-senac">
+    
+                            <div>
+                                <h3>Guia de normalização 3ª edição</h3>
+                                <p>Data atualizada: 12/2014</p>
+                            </div>
+    
+                            <img class="hover active" src="./assets/images/svg/download.svg" alt="download">
+                        </div>
+                    </div>
+                                
+            </div>
+
+       </div>
+    </section>
+
+    <section id="referenciador" class="container" style="display: none;">
+       <div id="container-referenciador">
+
+        <div id="container-referenciador-title" name="referenciador">
+            <img src="./assets/images/svg/file-earmark-font.svg" alt="Referenciador">
+            <span>REFERENCIADOR</span>
+        </div>
+
+        <div id="container-referenciador-desc-form">
+            
+           <div id="container-referenciador-textarea">
+                <textarea rows="20"></textarea>
+                <button title="Copiar" class="hover active" id="btn-copiar-referencia">
+                    <span>
+                        <img src="./assets/images/svg/copy.svg" width="25px" > COPIAR
+                    </span>
+                </button>
+           </div>
+
+            <form action="" method="post">
+                <div id="container-referenciador-form">
+                    <label for="modelo">Modelo</label>  
+                    <select name="modelo" id="modelo">
+                        <option value="senac">Senac</option>
+                    </select>   
+    
+                    <label for="tipo">Tipo</label>  
+                    <select name="tipo" id="tipo">
+                        <option value="livros-impressos">Livros Impressos</option>
+                        <option value="dicionarios-impressos">Dicionários Impressos</option>
+                        <option value="atlas-impressos">Atlas impressos</option>
+                        <option value="bibliografias-impressas">Bibliografias Impressas</option>
+                    </select>   
+    
+                    <label for="nome-autor">Nome do Autor</label>                
+                    <input id="nome-autor"type="text">
+    
+                    <label for="titulo-livro">Título do Livro</label>                
+                    <input id="titulo-livro"type="text">
+    
+                    <div id="input-subtitulo">
+                        <label for="subtitulo">Subtitulo</label>                
+                        <input id="subtitulo" type="text">    
+                    </div>            
+    
+                    <label for="cidade">Cidade</label>                
+                    <input id="cidade"type="text">
+    
+                    <div id="input-editora">
+                        <label for="editora">Editora</label>                
+                        <input id="editora"type="text">
+                    </div>                    
+    
+                    <label for="ano">Ano</label>                
+                    <input id="ano"type="text">   
+                </div>
+            </form>
+        </div>
+
+       </div>
+    </section>
+
+    <section id="comoUsar" class="container" style="display: none;">
+        <div id="container-comoUsar">
+
+            <div id="container-comoUsar-foto-texto">
+                <img src="./assets/images/svg/girl-sobre-comoUsar.svg" width="100%">
+            </div>
+
+            <div id="container-comoUsar-desc">
+                <p>Para usar o <b>Normalizador de Projetos</b>, 
+                    basta você selecionar a organização para qual você irá produzir o 
+                    seu documento na aba de Documentos e baixar um arquivo, ele ira conter um 
+                    documento genérico com todas as normalizações ja incluídas. Depois, 
+                    é so trocar as informações genéricas para as do seu projeto.</p>
+
+                <p>O <b>Referenciador</b>, é outra ferramenta de normalização mas esta é mais complicada.</p>
+
+                <p>Primeiro deve selecionar a organização para qual deseja criar a referencia, 
+                    isso abrira o campo de tipo de referencia que deseja fazer. 
+                    Elas sao auto explicativas dependendo de onde você pegou a referencia.</p>   
+                    
+                <p>Selecionado o tipo de referencia você verá o formulário se abrir. Insira todas as informações necessárias, 
+                    e vera na caixa de output a referencia se formar.</p>
+
+                <p>Pronto! Basta copiar e colar o texto no seu projeto.</p>
+            </div>
+
+        </div>        
+    </section>
+
+    <section id="sobre" class="container" style="display: none;">
+        <div id="container-sobre">
+
+            <div id="container-sobre-foto-texto">
+                <img src="./assets/images/svg/girl-sobre-comoUsar.svg" width="100%">
+            </div>
+
+            <div id="container-sobre-desc">
+                <div id="sobre-desc">
+                    <p>Apresentamos o nosso novo produto, 
+                        um site com templates normativos para trabalhos do Senac.</p>
+                    <p>Como todos sabemos, muitos estudantes têm dificuldades em 
+                        seguir as normas da ABNT ou do próprio Senac na hora de criar 
+                        trabalhos acadêmicos.</p>
+                    <p>Essa tarefa pode ser demorada e estressante, 
+                        além de exigir um conhecimento técnico específico que nem todos possuem.</p>
+                </div>
+
+                    <div id="container-sobre-devs">
+                        <span>
+                            <p class="dev">Developers:</p>
+                        </span>
+
+                        <span>
+                            <img src="./assets/images/svg/code.svg" alt="code">
+                            <p class="dev">Gabriel Henrique Wetzel</p>
+                        </span>
+
+                        <span>
+                            <img src="./assets/images/svg/code.svg" alt="code">
+                            <p class="dev">Giovanni Bruno Zago Giorgete</p>
+                        </span>
+
+                        <span>
+                            <img src="./assets/images/svg/code.svg" alt="code">
+                            <p class="dev">Julio Marcilio dos Santos Junior</p>
+                        </span>
+
+                        <span>
+                            <img src="./assets/images/svg/code.svg" alt="code">
+                            <p class="dev">Gabriel Modesto dos Santos</p>
+                        </span>
+
+                        <span>
+                            <img src="./assets/images/svg/code.svg" alt="code">
+                            <p class="dev">Gustavo Pereira Costa Santos</p>
+                        </span>
+
+                        <img src="./assets/images/svg/diagram-3.svg" alt="diagram">
+                    </div>
+                    
+            </div>
+
+        </div>        
+    </section>
+
+    <footer></footer>
+    
+    <script src="./assets/scripts/script_nav.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>

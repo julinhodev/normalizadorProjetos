@@ -1,0 +1,380 @@
+/* VÁRIAVEIS GLOBAIS */
+:root {
+    --azul-principal: #4f6dd6;
+    --branco-principal: #ffffff;
+    --body-background: #D9D9D9;
+    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+body {
+    background: var(--body-background);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container {
+    margin: auto;
+    padding: 0px 40px 0px 40px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+header,
+nav {
+    display: flex;
+    align-items: center;
+    background: var(--azul-principal);
+    color: var(--branco-principal);
+    height: 80px;
+}
+
+header section,
+nav section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav {
+    background: var(--branco-principal);
+    height: 100px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav div span {
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    background-color: #4f6dd6;
+    color: var(--branco-principal);
+    font-weight: 500;
+}
+
+.hover:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.active:active {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.container-pesquisa {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid var(--azul-principal);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    max-width: 30rem;
+}
+
+.container-pesquisa .search {
+    outline: none;
+    margin-right: 10px;
+}
+
+.texto-foto {
+    font-size: 5rem;
+    font-weight: bold;
+    width: 35rem;
+    color: var(--azul-principal);
+}
+
+#container-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-tamplate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-tamplate span {
+    margin-top: 1.5rem;
+}
+
+.container-tamplate-download {
+    width: 30rem;
+    height: 9rem;
+    border-radius: 8px;
+    background-color: var(--branco-principal);
+    box-shadow: var(--box-shadow);
+    margin-top: 1.5rem;
+}
+
+.container-intertno-template-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 100%;    
+}
+
+.container-intertno-template-download div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 60%;
+}
+
+.container-intertno-template-download p {
+    font-size: 0.8rem;
+}
+
+#container-sobre {
+    display: flex;
+}
+
+#container-sobre-foto-texto {
+    max-width: 40%;     
+}
+
+#container-sobre-foto-texto img {
+    border-radius: 8px;
+}
+
+#container-sobre-desc {
+    display: flex;
+}
+
+#sobre-desc {
+    max-width: 450px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#sobre-desc p {
+    font-size: 1.5rem;
+}
+
+#container-sobre-devs {
+    min-width: 300px;
+    max-height: 450px;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    background-color: var(--branco-principal);
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.dev {
+    margin-bottom: 1rem;
+}
+
+#container-comoUsar {
+    display: flex;
+}
+
+#container-comoUsar-foto-texto {
+    width: 40%;
+}
+
+#container-comoUsar-foto-texto img{
+    border-radius: 8px;
+}
+
+#container-comoUsar-desc {
+    width: 60%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#container-comoUsar-desc p,
+#container-comoUsar-desc b {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#container-documentos,
+#container-referenciador {
+    margin-top: 20px;
+}
+
+#container-documentos-title,
+#container-referenciador-title {
+    display: flex;
+    align-items: center;
+}
+
+#container-documentos-title img,
+#container-referenciador-title img {
+    height: 4rem;
+}
+
+#container-documentos-title span,
+#container-referenciador-title span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--azul-principal);
+}
+
+#container-documentos-search {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#container-documentos-search .container-pesquisa {
+    margin-right: 2rem;
+}
+
+#container-documentos-search input {
+    background-color: var(--body-background);
+    width: 30rem;
+}
+
+#container-documentos-tamplate-resultado {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container-documentos-tamplate-resultado .container-tamplate-download{
+    margin-right: 2rem;
+}
+
+#container-referenciador-desc-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#container-referenciador-textarea {
+    width: 60%;
+    margin-right: 1rem;
+}
+
+textarea {
+    border-radius: 8px;
+    border: solid 1px var(--azul-principal);
+    background-color: var(--body-background);
+    outline: none;
+    padding: 0.5rem;
+    margin-right: 10px;
+    width: 100%;
+    resize: none;
+}
+
+button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco-principal);
+}
+
+button {
+    background-color: var(--azul-principal);
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#container-referenciador-form {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+#container-referenciador-form input
+,#container-referenciador-form select {
+    border-radius: 8px;
+    border: solid 1px var(--azul-principal);
+    background-color: var(--body-background);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    width: 100%;
+}
+
+#container-referenciador-desc-form label {
+    font-weight: bold;
+}
+
+.container-referenciador-form-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputs-referenciador {
+   margin-right: 5px; 
+}
+
+#container-referenciador-form-inputs-paginas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container-referenciador-form-inputs-paginas span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .img {
+    background-image: url('../images/cute-girl-works-laptop-hipster-cafe1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ */
+
+footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    background: linear-gradient(180deg, rgba(79, 109, 214, 0.63) 0%, #4F6DD6 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
