@@ -23,7 +23,7 @@ const inputValues = {
 function buscarTemplates() {
     const inputPesquisa = document.querySelector('#search-documentos').value.toUpperCase()
     document.querySelector('#container-documentos-tamplate-resultado').innerHTML = null
-    document.querySelector('#contador-resultados').innerHTML = 0
+    let contador = 0
 
     templates.forEach(template => {
         if(template.desc.toUpperCase().includes(inputPesquisa)) {
@@ -42,8 +42,9 @@ function buscarTemplates() {
                     </div>
                 </div>
             `
-        }
-        document.querySelector('#contador-resultados').innerHTML ++
+            contador++
+            document.querySelector('#contador-resultados').innerHTML = contador
+        }       
     })
 }
 
