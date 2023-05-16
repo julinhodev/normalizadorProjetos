@@ -42,9 +42,10 @@ function buscarTemplates() {
                     </div>
                 </div>
             `
-            contador++
-            document.querySelector('#contador-resultados').innerHTML = contador
-        }       
+            contador++            
+        } 
+        document.querySelector('#contador-resultados').innerHTML = contador
+        document.querySelector('#desc-resultados').innerHTML = `"${inputPesquisa}"`
     })
 }
 
@@ -142,7 +143,3 @@ function autor(autor) {
 }
 
 buscarTemplatesInicio()
-
-
-
-
