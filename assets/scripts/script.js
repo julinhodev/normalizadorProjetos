@@ -22,6 +22,7 @@ const inputValues = {
 
 function buscarTemplates() {
     const inputPesquisa = document.querySelector('#search-documentos').value.toUpperCase()
+    if(!inputPesquisa) return alert('É necessário escrever algo para realizar uma pesquisa.')
     document.querySelector('#container-documentos-tamplate-resultado').innerHTML = null
     let contador = 0
 
