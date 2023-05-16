@@ -1,10 +1,15 @@
-document.querySelector('#btn-search').addEventListener('click', funcionalidadeEmDesenvolvimento)
-document.querySelector('#btn-add-tamplate').addEventListener('click', funcionalidadeEmDesenvolvimento)
-document.querySelector('#btn-download-conclusao-curso').addEventListener('click', handleDownloadTemplate)
+document.querySelector('#btn-search').addEventListener('click', buscarTemplates)
+document.querySelector('#btn-search-inicio').addEventListener('click', funcionalidadeEmDesenvolvimento)
 document.querySelector('#btn-copiar-referencia').addEventListener('click', handleCopiarReferencia)
 document.querySelector('#tipo').addEventListener('change', handleInserirDadosTextArea)
 document.querySelectorAll('input').forEach(input => input.addEventListener('keyup', handleCapturandoCaracterDigitado))
 
+const templates = [
+    { arquivo: '/templates/Guia_normatizacao.pdf', desc: 'Guia de Normalização' , data: '02/2023'},
+    { arquivo: '/templates/Projeto Integrador.docx', desc: 'Projeto Integrador' , data: '01/2023'},
+    { arquivo: '/templates/PTI Padrao.docx', desc: 'PTI Padrão' , data: '09/2022'},
+    { arquivo: '/templates/TCC.docx', desc: 'TCC' , data: '04/2022'}
+]
 
 const inputValues = {
     nomeAutor: '',
@@ -15,12 +20,61 @@ const inputValues = {
     ano: ''
 }
 
+function buscarTemplates() {
+    const inputPesquisa = document.querySelector('#search-documentos').value.toUpperCase()
+    document.querySelector('#container-documentos-tamplate-resultado').innerHTML = null
+    document.querySelector('#contador-resultados').innerHTML = 0
+
+    templates.forEach(template => {
+        if(template.desc.toUpperCase().includes(inputPesquisa)) {
+            document.querySelector('#container-documentos-tamplate-resultado').innerHTML += `
+            <div class="container-tamplate">
+                <div class="container-tamplate-download">
+                    <div class="container-intertno-template-download">
+                        <img src="./assets/images/svg/logo-senac.svg" alt="logo-senac">
+
+                        <div class="container-desc-tamplate-download">
+                            <h3>${template.desc}</h3>
+                            <p>Data atualizada: ${template.data}</p>
+                        </div>
+
+                        <img id="${template.arquivo}" onclick="handleDownloadTemplate(this.id)" class="hover active" src="./assets/images/svg/download.svg" alt="download">
+                    </div>
+                </div>
+            `
+        }
+        document.querySelector('#contador-resultados').innerHTML ++
+    })
+}
+
+function buscarTemplatesInicio() {
+    document.querySelector('.container-tamplate').innerHTML = null
+
+    templates.forEach(tamplate => {
+            document.querySelector('.container-tamplate').innerHTML += `
+            <div class="container-tamplate">
+                <div class="container-tamplate-download">
+                    <div class="container-intertno-template-download">
+                        <img src="./assets/images/svg/logo-senac.svg" alt="logo-senac">
+
+                        <div class="container-desc-tamplate-download">
+                            <h3>${tamplate.desc}</h3>
+                            <p>Data atualizada: ${tamplate.data}</p>
+                        </div>
+
+                        <img id="${tamplate.arquivo}" onclick="handleDownloadTemplate(this.id)" class="hover active" src="./assets/images/svg/download.svg" alt="download">
+                    </div>
+                </div>
+            `
+        })        
+}
+
 function funcionalidadeEmDesenvolvimento() {
     return alert('Funcionalidade em desenvolvimento!')
 }
 
-function handleDownloadTemplate() {
-    window.open(window.location.href + '/templates/CENTRO UNIVERSITÁRIO SENAC.docx')
+function handleDownloadTemplate(caminho) {
+    window.open(`${window.location.href}${caminho}`)
 }
 
 function handleCopiarReferencia() {
@@ -86,6 +140,7 @@ function autor(autor) {
     return newAutor
 }
 
+buscarTemplatesInicio()
 
 
 
